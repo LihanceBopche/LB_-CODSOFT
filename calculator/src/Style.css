@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.red {
+    color: rgb(255, 94, 118);
+}
+
+.blue {
+    color: rgb(100, 219, 255);
+}
+
+.calculator {
+    width: 90%;
+    max-width: 350px;
+    height: 600px;
+    margin: 10% auto;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.calculator:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.monitor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+    padding: 0 30px;
+    background-color: rgb(36, 36, 36);
+}
+
+.out-put {
+    text-align: right;
+    font-size: 2.5rem;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 36, 36);
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
+}
+
+.keyboard-row {
+    display: flex;
+    gap: 15px;
+}
+
+.one-block {
+    width: 100%;
+    max-width: 80px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.two-block {
+    width: calc(50% - 7.5px);
+    aspect-ratio: 2 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.one-block:hover, .two-block:hover {
+    background-color: rgb(64, 64, 64);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        margin: 20% auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .out-put {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+
+    .keyboard {
+        padding: 10px;
+    }
+
+    .keyboard-row {
+        gap: 10px;
+    }
+
+    .one-block {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .two-block {
+        width: calc(50% - 5px);
+    }
+}
